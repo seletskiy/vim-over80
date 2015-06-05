@@ -14,7 +14,7 @@ augroup end
 
 fun! g:over80#disable_highlight()
     if exists('searchparty#mash#unmash')
-        caall searchparty#mash#umash()
+        call searchparty#mash#umash()
     endif
     set cc=""
 endfun
