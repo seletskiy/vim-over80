@@ -1,6 +1,3 @@
-nnoremap / :call g:over80#disable_highlight()<CR>/\v
-nnoremap ? :call g:over80#disable_highlight()<CR>?\v
-
 augroup over80_highlight
     au!
     au VimResized,VimEnter * call g:over80#enable_highlight()
