@@ -7,6 +7,7 @@ augroup end
 augroup over80_quickfix
     au!
     au FileType qf call g:over80#disable_highlight()
+    au FileType unite call g:over80#disable_highlight()
 augroup end
 
 fun! g:over80#disable_highlight()
