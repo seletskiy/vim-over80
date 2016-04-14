@@ -36,6 +36,7 @@ fun! g:over80#enable_highlight()
         if searchpos(@/, 'nc') == [line('.'), col('.')]
             return g:over80#disable_highlight()
         endif
+    catch E54
     catch E35
     endtry
 
