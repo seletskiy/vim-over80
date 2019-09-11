@@ -40,7 +40,12 @@ fun! g:over80#enable_highlight()
     catch E35
     endtry
 
-    if &columns > 80
-        let &cc=join(range(80, &columns), ',')
+    let limit = 80
+    if &ft == 'java'
+        let limit = 101
+    endif
+
+    if &columns > limit
+        let &cc=join(range(limit, &columns), ',')
     endif
 endfun
