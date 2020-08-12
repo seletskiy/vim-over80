@@ -23,6 +23,12 @@ fun! g:over80#enable_highlight()
         return
     endif
 
+    if exists("b:over80")
+        if !b:over80
+            return
+        endif
+    endif
+
     " integration with searchparty
     if exists("b:mash_search_item")
         for m in getmatches()
